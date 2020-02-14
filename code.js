@@ -20,4 +20,16 @@ function signIn() {
     }
 }
 setInterval(signIn, 1000);
+
+
+    function signIna() {
+    var a = document.getElementsByTagName("a");
+    for (var i = 0; i < a.length; i++) {
+        if (a[i].innerHTML === "签到") {
+            a[i].click();
+            console.log("签到成功！");
+        }
+    }
+}
+setInterval(signIna, 1000);
 })();
